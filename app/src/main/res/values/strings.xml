@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TaskOne</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_n_a">N/A</string>
+    <string name="txt_ascending">Ascending</string>
+    <string name="txt_descending">Descending</string>
+    <string name="txt_no_selection_yet">No Selection Yet!</string>
+</resources>
