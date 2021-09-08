@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.taskone.adapter.HomeAdapter
 import com.taskone.databinding.FragmentHomeBinding
-import com.taskone.utils.ListRepo
 
 
 class HomeFragment : Fragment(), HomeAdapter.AdapterClickListener {
@@ -25,7 +24,7 @@ class HomeFragment : Fragment(), HomeAdapter.AdapterClickListener {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.rvHome.adapter = HomeAdapter(ListRepo.getDataList(), this)
+//        binding.rvHome.adapter = HomeAdapter(ListRepo.getDataList(), this)
     }
 
     override fun onDestroy() {
@@ -35,7 +34,7 @@ class HomeFragment : Fragment(), HomeAdapter.AdapterClickListener {
 
     override
     fun onItemChecked(pos: Int) {
-        ListRepo.getCheckedItems()
+//        ListRepo.getCheckedItems()
     }
 
 

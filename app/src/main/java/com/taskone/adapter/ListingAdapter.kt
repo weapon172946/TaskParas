@@ -9,14 +9,18 @@ import com.taskone.model.MyListModel
 class ListingAdapter(var dataList: ArrayList<MyListModel>) :
     RecyclerView.Adapter<ListingAdapter.MyViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
-        return MyViewHolder(RecyclerHomeItemBinding.inflate(LayoutInflater.from(parent.context)))
+        return MyViewHolder(
+            RecyclerHomeItemBinding.inflate(
+                LayoutInflater.from(parent.context),
+                parent,
+                false
+            )
+        )
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        holder.binding.tvName.setText(dataList[position].name)
-        holder.binding.tvDate.setText(dataList[position].date)
-        holder.binding.cbItem.isChecked = dataList[position].isSelected
-        holder.binding.cbItem.isEnabled = false
+        holder.binding.etAnswer.setText(dataList[position].answer)
+        holder.binding.tvName.setText(dataList[position].question)
     }
 
     override fun getItemCount(): Int {

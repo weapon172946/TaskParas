@@ -6,4 +6,6 @@
     <string name="txt_ascending">Ascending</string>
     <string name="txt_descending">Descending</string>
     <string name="txt_no_selection_yet">No Selection Yet!</string>
+    <string name="txt_next_page">Next Page</string>
+    <string name="txt_submit">Submit</string>
 </resources>

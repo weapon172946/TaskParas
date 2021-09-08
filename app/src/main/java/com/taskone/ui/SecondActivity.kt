@@ -15,11 +15,11 @@ class SecondActivity : AppCompatActivity() {
         _binding = ActivitySecondBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        adapter = ListingAdapter(ListRepo.getCheckedItems())
+        adapter = ListingAdapter(ListRepo.getDataList())
         binding.rvList.adapter = adapter
 
-        binding.btAsc.setOnClickListener { adapter.updateData(ListRepo.getAscendingList()) }
-        binding.btDsc.setOnClickListener { adapter.updateData(ListRepo.getDescendingList()) }
+//        binding.btAsc.setOnClickListener { adapter.updateData(ListRepo.getAscendingList()) }
+//        binding.btDsc.setOnClickListener { adapter.updateData(ListRepo.getDescendingList()) }
     }
 
 
